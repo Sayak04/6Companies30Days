@@ -15,8 +15,8 @@ public:
                 if(tokens[i] == "/") ans = first / second;
                 st.push(ans);
             } else {
-                long long x = stoi(tokens[i]) * 1LL;
-                st.push(x);
+                long long val = stoi(tokens[i]) * 1LL;
+                st.push(val);
             }
         }
         return (int)st.top();
